@@ -52,7 +52,8 @@ public class Get {
                 .get("https://whitesmokehouse.com/webhook/api/department");
 
          System.out.println(res1.asPrettyString());
-         String department1 = res1.jsonPath().getString("deparment[1]");
-         
-        }
+         String department1 = res1.jsonPath().getString("[0].department");
+        Assert.assertEquals(department1, "Technology");
+                
+    }
 }

@@ -36,5 +36,7 @@ public class Post {
 
     token = res.jsonPath().getString("token");
     Assert.assertNotNull(token);
+
+    
     }
 }
