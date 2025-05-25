@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-E2ESuite" class="navigator-link">
-              <span class="suite-name border-passed">E2ESuite</span>
+              <span class="suite-name border-failed">E2ESuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-E2ESuite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,51 +92,54 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,  3 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-E2ESuite" class="hide-methods passed suite-E2ESuite"> (hide)</a> <!-- hide-methods passed suite-E2ESuite -->
-                      <a href="#" panel-name="suite-E2ESuite" class="show-methods passed suite-E2ESuite"> (show)</a> <!-- show-methods passed suite-E2ESuite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-E2ESuite" class="hide-methods failed suite-E2ESuite"> (hide)</a> <!-- hide-methods failed suite-E2ESuite -->
+                      <a href="#" panel-name="suite-E2ESuite" class="show-methods failed suite-E2ESuite"> (show)</a> <!-- show-methods failed suite-E2ESuite -->
                     </span>
-                    <div class="method-list-content passed suite-E2ESuite">
+                    <div class="method-list-content failed suite-E2ESuite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-E2ESuite" title="e2e_Tugas2.deleteEmployee" class="method navigator-link" hash-for-method="DeleteEmployee">DeleteEmployee</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-E2ESuite" title="e2e_Tugas2.registerEmployee" class="method navigator-link" hash-for-method="addEmployee">addEmployee</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                    </div> <!-- method-list-content failed suite-E2ESuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-E2ESuite" class="hide-methods skipped suite-E2ESuite"> (hide)</a> <!-- hide-methods skipped suite-E2ESuite -->
+                      <a href="#" panel-name="suite-E2ESuite" class="show-methods skipped suite-E2ESuite"> (show)</a> <!-- show-methods skipped suite-E2ESuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-E2ESuite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-E2ESuite" title="e2e_Tugas2.registerEmployee" class="method navigator-link" hash-for-method="loginEmployee">loginEmployee</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-E2ESuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-E2ESuite" class="hide-methods skipped suite-E2ESuite"> (hide)</a> <!-- hide-methods skipped suite-E2ESuite -->
+                      <a href="#" panel-name="suite-E2ESuite" class="show-methods skipped suite-E2ESuite"> (show)</a> <!-- show-methods skipped suite-E2ESuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-E2ESuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-E2ESuite" title="e2e_Tugas2.registerEmployee" class="method navigator-link" hash-for-method="addEmployee">addEmployee</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-E2ESuite" title="e2e_Tugas2.registerEmployee" class="method navigator-link" hash-for-method="getAllEmployee">getAllEmployee</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-E2ESuite" title="e2e_Tugas2.registerEmployee" class="method navigator-link" hash-for-method="addEmployee">addEmployee</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-E2ESuite" title="e2e_Tugas2.deleteEmployee" class="method navigator-link" hash-for-method="getAllEmployee">getAllEmployee</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-E2ESuite" title="e2e_Tugas2.registerEmployee" class="method navigator-link" hash-for-method="loginEmployee">loginEmployee</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-E2ESuite" title="e2e_Tugas2.registerEmployee" class="method navigator-link" hash-for-method="searchEmployee">searchEmployee</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-E2ESuite" title="e2e_Tugas2.deleteEmployee" class="method navigator-link" hash-for-method="searchEmployee">searchEmployee</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-E2ESuite -->
+                    </div> <!-- method-list-content skipped suite-E2ESuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -148,38 +151,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-E2ESuite" class="panel E2ESuite">
-          <div class="suite-E2ESuite-class-passed">
+          <div class="suite-E2ESuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">e2e_Tugas2.deleteEmployee</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="DeleteEmployee">
-                  </a> <!-- DeleteEmployee -->
-                  <span class="method-name">DeleteEmployee</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getAllEmployee">
-                  </a> <!-- getAllEmployee -->
-                  <span class="method-name">getAllEmployee</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchEmployee">
-                  </a> <!-- searchEmployee -->
-                  <span class="method-name">searchEmployee</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-E2ESuite-class-passed -->
-          <div class="suite-E2ESuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">e2e_Tugas2.registerEmployee</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -188,13 +162,70 @@
                   <a name="addEmployee">
                   </a> <!-- addEmployee -->
                   <span class="method-name">addEmployee</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at e2e_Tugas2.registerEmployee.addEmployee(registerEmployee.java:52)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-E2ESuite-class-failed -->
+          <div class="suite-E2ESuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">e2e_Tugas2.registerEmployee</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployee">
+                  </a> <!-- addEmployee -->
+                  <span class="method-name">addEmployee</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at e2e_Tugas2.registerEmployee.addEmployee(registerEmployee.java:52)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="getAllEmployee">
-                  </a> <!-- getAllEmployee -->
-                  <span class="method-name">getAllEmployee</span>
+                  <a name="addEmployee">
+                  </a> <!-- addEmployee -->
+                  <span class="method-name">addEmployee</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at e2e_Tugas2.registerEmployee.addEmployee(registerEmployee.java:52)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -202,17 +233,19 @@
                   <a name="loginEmployee">
                   </a> <!-- loginEmployee -->
                   <span class="method-name">loginEmployee</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchEmployee">
-                  </a> <!-- searchEmployee -->
-                  <span class="method-name">searchEmployee</span>
+                  <div class="stack-trace">java.lang.Throwable: Method e2e_Tugas2.registerEmployee.loginEmployee() on instance e2e_Tugas2.registerEmployee@546ed2a0 depends on not successfully finished methods 
+[e2e_Tugas2.registerEmployee.addEmployee() on instance e2e_Tugas2.registerEmployee@546ed2a0]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-E2ESuite-class-passed -->
+          </div> <!-- suite-E2ESuite-class-skipped -->
         </div> <!-- panel E2ESuite -->
         <div panel-name="test-xml-E2ESuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -228,8 +261,10 @@
       &lt;package name=&quot;e2e_Tugas2&quot;/&gt;
     &lt;/packages&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;e2e_Tugas2.deleteEmployee&quot;/&gt;
+      &lt;class name=&quot;e2e_Tugas2.registerEmployee$1&quot;/&gt;
+      &lt;class name=&quot;e2e_Tugas2.registerEmployee$2&quot;/&gt;
       &lt;class name=&quot;e2e_Tugas2.registerEmployee&quot;/&gt;
+      &lt;class name=&quot;e2e_Tugas2.retrySample&quot;/&gt;
       &lt;class name=&quot;e2e_Tugas2.staticVar&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- E2E --&gt;
@@ -244,7 +279,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">E2E (3 classes)</span>
+                <span class="test-name">E2E (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -254,18 +289,6 @@
             <span class="header-content">Groups for E2ESuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">assertEmployeeRegister</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">getAllEmployee</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">searchEmployee</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-E2ESuite" class="panel">
@@ -282,40 +305,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addEmployee')
 data.setCell(0, 2, 'e2e_Tugas2.registerEmployee')
-data.setCell(0, 3, 3058);
+data.setCell(0, 3, 2568);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getAllEmployee')
+data.setCell(1, 1, 'addEmployee')
 data.setCell(1, 2, 'e2e_Tugas2.registerEmployee')
-data.setCell(1, 3, 2705);
+data.setCell(1, 3, 828);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getAllEmployee')
-data.setCell(2, 2, 'e2e_Tugas2.deleteEmployee')
-data.setCell(2, 3, 2050);
+data.setCell(2, 1, 'addEmployee')
+data.setCell(2, 2, 'e2e_Tugas2.registerEmployee')
+data.setCell(2, 3, 804);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'searchEmployee')
+data.setCell(3, 1, 'loginEmployee')
 data.setCell(3, 2, 'e2e_Tugas2.registerEmployee')
-data.setCell(3, 3, 931);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'searchEmployee')
-data.setCell(4, 2, 'e2e_Tugas2.deleteEmployee')
-data.setCell(4, 3, 874);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginEmployee')
-data.setCell(5, 2, 'e2e_Tugas2.registerEmployee')
-data.setCell(5, 3, 868);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'DeleteEmployee')
-data.setCell(6, 2, 'e2e_Tugas2.deleteEmployee')
-data.setCell(6, 3, 788);
+data.setCell(3, 3, 0);
 window.suiteTableData['E2ESuite']= { tableData: data, tableDiv: 'times-div-E2ESuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-E2ESuite">
               </div> <!-- times-div-E2ESuite -->
             </div> <!-- times-div -->
@@ -348,34 +359,17 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">addEmployee</span>
-                <span class="method-start">102 ms</span>
+                <span class="method-start">83 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">loginEmployee</span>
-                <span class="method-start">3168 ms</span>
+                <span class="method-name">addEmployee</span>
+                <span class="method-start">2657 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">getAllEmployee</span>
-                <span class="method-start">4042 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">searchEmployee</span>
-                <span class="method-start">4042 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">e2e_Tugas2.deleteEmployee</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">DeleteEmployee</span>
-                <span class="method-start">6754 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">getAllEmployee</span>
-                <span class="method-start">7544 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">searchEmployee</span>
-                <span class="method-start">7544 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addEmployee</span>
+                <span class="method-start">3488 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

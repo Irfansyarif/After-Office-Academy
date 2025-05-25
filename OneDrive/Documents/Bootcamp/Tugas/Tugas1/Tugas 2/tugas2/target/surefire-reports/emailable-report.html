@@ -9,16 +9,56 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">E2ESuite</th></tr>
-<tr><td><a href="#t0">E2E</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,548</td><td></td><td></td></tr>
+<tr><td><a href="#t0">E2E</a></td><td class="num">0</td><td class="num attn">1</td><td class="num attn">2</td><td class="num attn">1</td><td class="num">4,249</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">E2ESuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">E2E &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">e2e_Tugas2.deleteEmployee</td><td><a href="#m0">DeleteEmployee</a></td><td rowspan="1">1748137531719</td><td rowspan="1">788</td></tr><tr class="passedeven"><td><a href="#m1">getAllEmployee</a></td><td rowspan="1">1748137532509</td><td rowspan="1">2050</td></tr><tr class="passedeven"><td><a href="#m2">searchEmployee</a></td><td rowspan="1">1748137532509</td><td rowspan="1">874</td></tr><tr class="passedodd"><td rowspan="4">e2e_Tugas2.registerEmployee</td><td><a href="#m3">addEmployee</a></td><td rowspan="1">1748137525067</td><td rowspan="1">3058</td></tr><tr class="passedodd"><td><a href="#m4">getAllEmployee</a></td><td rowspan="1">1748137529007</td><td rowspan="1">2705</td></tr><tr class="passedodd"><td><a href="#m5">loginEmployee</a></td><td rowspan="1">1748137528133</td><td rowspan="1">868</td></tr><tr class="passedodd"><td><a href="#m6">searchEmployee</a></td><td rowspan="1">1748137529007</td><td rowspan="1">931</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">E2ESuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">E2E &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">e2e_Tugas2.registerEmployee</td><td><a href="#m0">addEmployee</a></td><td rowspan="1">1748163595777</td><td rowspan="1">804</td></tr><tr><th colspan="4">E2E &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">e2e_Tugas2.registerEmployee</td><td><a href="#m1">loginEmployee</a></td><td rowspan="1">1748163596584</td><td rowspan="1">0</td></tr><tr><th colspan="4">E2E &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="2">e2e_Tugas2.registerEmployee</td><td><a href="#m2">addEmployee</a></td><td rowspan="2">1748163592372</td><td rowspan="2">2568</td></tr><tr class="retriedeven"><td><a href="#m3">addEmployee</a></td></tr></tbody>
 </table>
-<h2>E2E</h2><h3 id="m0">e2e_Tugas2.deleteEmployee#DeleteEmployee</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">e2e_Tugas2.deleteEmployee#getAllEmployee</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">e2e_Tugas2.deleteEmployee#searchEmployee</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">e2e_Tugas2.registerEmployee#addEmployee</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">e2e_Tugas2.registerEmployee#getAllEmployee</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">e2e_Tugas2.registerEmployee#loginEmployee</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">e2e_Tugas2.registerEmployee#searchEmployee</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>E2E</h2><h3 id="m0">e2e_Tugas2.registerEmployee#addEmployee</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at e2e_Tugas2.registerEmployee.addEmployee(registerEmployee.java:52)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">e2e_Tugas2.registerEmployee#loginEmployee</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method e2e_Tugas2.registerEmployee.loginEmployee() on instance e2e_Tugas2.registerEmployee@546ed2a0 depends on not successfully finished methods 
+[e2e_Tugas2.registerEmployee.addEmployee() on instance e2e_Tugas2.registerEmployee@546ed2a0]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 4 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">e2e_Tugas2.registerEmployee#addEmployee</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at e2e_Tugas2.registerEmployee.addEmployee(registerEmployee.java:52)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">e2e_Tugas2.registerEmployee#addEmployee</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at e2e_Tugas2.registerEmployee.addEmployee(registerEmployee.java:52)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
