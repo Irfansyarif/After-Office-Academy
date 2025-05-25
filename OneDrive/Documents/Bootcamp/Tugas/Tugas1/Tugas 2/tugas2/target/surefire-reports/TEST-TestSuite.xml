@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="10.176" tests="7" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="18"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\apache-maven-3.8.6\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Jakarta"/>
+    <property name="maven.conf" value="C:\apache-maven-3.8.6/conf"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ID"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-18.0.2\bin"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install -DsuiteXml=src/test/java/Resources/e2e.xml"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="C:\apache-maven-3.8.6"/>
+    <property name="surefire.test.class.path" value="C:\Users\irfan\OneDrive\Documents\Bootcamp\Tugas\Tugas1\Tugas 2\tugas2\target\test-classes;C:\Users\irfan\OneDrive\Documents\Bootcamp\Tugas\Tugas1\Tugas 2\tugas2\target\classes;C:\Users\irfan\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\irfan\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\irfan\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\irfan\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\irfan\.m2\repository\io\rest-assured\rest-assured\5.5.1\rest-assured-5.5.1.jar;C:\Users\irfan\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\irfan\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\irfan\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\irfan\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\irfan\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\irfan\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\irfan\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\irfan\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\irfan\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\irfan\.m2\repository\io\rest-assured\json-path\5.5.1\json-path-5.5.1.jar;C:\Users\irfan\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\irfan\.m2\repository\io\rest-assured\rest-assured-common\5.5.1\rest-assured-common-5.5.1.jar;C:\Users\irfan\.m2\repository\io\rest-assured\xml-path\5.5.1\xml-path-5.5.1.jar;C:\Users\irfan\.m2\repository\org\apache\commons\commons-lang3\3.16.0\commons-lang3-3.16.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\irfan"/>
+    <property name="user.language" value="en"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-07-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-18.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\irfan\OneDrive\Documents\Bootcamp\Tugas\Tugas1\Tugas 2\tugas2"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="18.0.2+9-61"/>
+    <property name="user.name" value="irfan"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\irfan\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="suiteXml" value="src/test/java/Resources/e2e.xml"/>
+    <property name="java.io.tmpdir" value="C:\Users\irfan\AppData\Local\Temp\"/>
+    <property name="java.version" value="18.0.2"/>
+    <property name="user.dir" value="C:\Users\irfan\OneDrive\Documents\Bootcamp\Tugas\Tugas1\Tugas 2\tugas2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\irfan\OneDrive\Documents\Bootcamp\Tugas\Tugas1\Tugas 2\tugas2"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-18.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\apache-maven-3.8.6\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\dotnet\;C:\Users\irfan\AppData\Local\Microsoft\WindowsApps;;C:\Users\irfan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\irfan\AppData\Roaming\npm;C:\Users\irfan\.dotnet\tools;C:\Users\irfan\AppData\Local\Programs\Ollama;C:\Users\irfan\AppData\Local\Programs\cursor\resources\app\bin;c:\Users\irfan\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="18.0.2+9-61"/>
+    <property name="classworlds.conf" value="C:\apache-maven-3.8.6\bin\m2.conf"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="library.jansi.path" value="C:\apache-maven-3.8.6\lib\jansi-native"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="addEmployee" classname="e2e_Tugas2.registerEmployee" time="3.058">
+    <system-out><![CDATA[Suite E2E running...
+addEmployee starting....
+Request method:	POST
+Request URI:	https://whitesmokehouse.com/webhook/employee/add
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "e2etestuBdEmEJuMb@mail.com",
+    "password": "password",
+    "full_name": "E2E Test Full Name uBdEmEJuMb",
+    "department": "Technology",
+    "title": "QA"
+}
+[
+    {
+        "id": 397,
+        "email": "e2etestuBdEmEJuMb@mail.com",
+        "password_hash": "5f4dcc3b5aa765d61d8327deb882cf99",
+        "full_name": "E2E Test Full Name uBdEmEJuMb",
+        "department": "Technology",
+        "title": "QA",
+        "create_at": "2025-05-25T01:45:26.722Z",
+        "update_at": "2025-05-25T01:45:26.722Z"
+    }
+]
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="loginEmployee" classname="e2e_Tugas2.registerEmployee" time="0.866">
+    <system-out><![CDATA[loginEmployee starting....
+Request method:	POST
+Request URI:	https://whitesmokehouse.com/webhook/employee/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "e2etestuBdEmEJuMb@mail.com",
+    "password": "password"
+}
+[
+    {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM5NyIsImlhdCI6MTc0ODEzNzUyOH0.s5mPd0u9HoSdG3hIwhlQrZykNryD4-z81x3ObTneG14"
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="searchEmployee" classname="e2e_Tugas2.registerEmployee" time="0.929">
+    <system-out><![CDATA[getAllEmployee starting....
+searchEmployee starting....
+Request method:	GET
+Request URI:	https://whitesmokehouse.com/webhook/employee/get_all
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://whitesmokehouse.com/webhook/41a9698d-d8b0-42df-9ddc-89c0a1a1aa79/employee/search/E2E%20Test%20Full%20Name%20uBdEmEJuMb
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+[
+    {
+        "full_name": "Rayhan Rendy"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "null"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Update PdwBoDdBkI"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "fifi noela"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi"
+    },
+    {
+        "full_name": "Hairul Hasabi"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "test name"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Test E2E Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "test name"
+    },
+    {
+        "full_name": "test name"
+    },
+    {
+        "full_name": "afteroffice1234"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "test name"
+    },
+    {
+        "full_name": "test name"
+    },
+    {
+        "full_name": "test name"
+    },
+    {
+        "full_name": "Ini nama yg udh diupdate ya"
+    },
+    {
+        "full_name": "Ini nama yg udh diupdate ya"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "test name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Azhar Test Register"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Update pPhqZGSqCX"
+    },
+    {
+        "full_name": "Budi "
+    },
+    {
+        "full_name": "Budi "
+    },
+    {
+        "full_name": "Budi "
+    },
+    {
+        "full_name": "Budi"
+    },
+    {
+        "full_name": "Budi"
+    },
+    {
+        "full_name": "Budi"
+    },
+    {
+        "full_name": "afteroffice1234"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Widya"
+    },
+    {
+        "full_name": "Widya"
+    },
+    {
+        "full_name": "Widya"
+    },
+    {
+        "full_name": "widyu"
+    },
+    {
+        "full_name": "Widya"
+    },
+    {
+        "full_name": "Widya"
+    },
+    {
+        "full_name": "Novaliza"
+    },
+    {
+        "full_name": "Novaliza"
+    },
+    {
+        "full_name": "Fernando Dian"
+    },
+    {
+        "full_name": "Fernando Dian"
+    },
+    {
+        "full_name": "Fernando Dian"
+    },
+    {
+        "full_name": "Widya"
+    },
+    {
+        "full_name": "Fernando Dian k"
+    },
+    {
+        "full_name": "Fernando Dian k"
+    },
+    {
+        "full_name": "Fernando Dian k"
+    },
+    {
+        "full_name": "Fernando Dian k"
+    },
+    {
+        "full_name": "Fernando Dian k"
+    },
+    {
+        "full_name": "Novaliza01"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Azhar Test Register"
+    },
+    {
+        "full_name": "Azhar Test Register"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "John Doe"
+    },
+    {
+        "full_name": "User Test"
+    },
+    {
+        "full_name": "User Test 1"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Azhar Test Register"
+    },
+    {
+        "full_name": "E2E Test Full Name uBdEmEJuMb"
+    }
+]
+[
+    {
+        "query": "E2E Test Full Name uBdEmEJuMb",
+        "result": [
+            {
+                "full_name": "E2E Test Full Name uBdEmEJuMb",
+                "department": "Technology",
+                "title": "QA"
+            }
+        ]
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="getAllEmployee" classname="e2e_Tugas2.registerEmployee" time="2.703"/>
+  <testcase name="DeleteEmployee" classname="e2e_Tugas2.deleteEmployee" time="0.788">
+    <system-out><![CDATA[deleteEmployee starting....
+Request method:	DELETE
+Request URI:	https://whitesmokehouse.com/webhook/employee/delete
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM5NyIsImlhdCI6MTc0ODEzNzUyOH0.s5mPd0u9HoSdG3hIwhlQrZykNryD4-z81x3ObTneG14
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+]]></system-out>
+  </testcase>
+  <testcase name="searchEmployee" classname="e2e_Tugas2.deleteEmployee" time="0.874">
+    <system-out><![CDATA[searchEmployee starting....
+getAllEmployee starting....
+Request method:	GET
+Request URI:	https://whitesmokehouse.com/webhook/employee/get_all
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://whitesmokehouse.com/webhook/41a9698d-d8b0-42df-9ddc-89c0a1a1aa79/employee/search/E2E%20Test%20Full%20Name%20uBdEmEJuMb
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+[
+    {
+        "full_name": "Rayhan Rendy"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "null"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Update PdwBoDdBkI"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "fifi noela"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi"
+    },
+    {
+        "full_name": "Hairul Hasabi"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "test name"
+    },
+    {
+        "full_name": "Albert Simanjuntak"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "Test E2E Full Name"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "test name"
+    },
+    {
+        "full_name": "test name"
+    },
+    {
+        "full_name": "afteroffice1234"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "test name"
+    },
+    {
+        "full_name": "test name"
+    },
+    {
+        "full_name": "test name"
+    },
+    {
+        "full_name": "Ini nama yg udh diupdate ya"
+    },
+    {
+        "full_name": "Ini nama yg udh diupdate ya"
+    },
+    {
+        "full_name": "Hairul Hasabi Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "test name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Azhar Test Register"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Update pPhqZGSqCX"
+    },
+    {
+        "full_name": "Budi "
+    },
+    {
+        "full_name": "Budi "
+    },
+    {
+        "full_name": "Budi "
+    },
+    {
+        "full_name": "Budi"
+    },
+    {
+        "full_name": "Budi"
+    },
+    {
+        "full_name": "Budi"
+    },
+    {
+        "full_name": "afteroffice1234"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Widya"
+    },
+    {
+        "full_name": "Widya"
+    },
+    {
+        "full_name": "Widya"
+    },
+    {
+        "full_name": "widyu"
+    },
+    {
+        "full_name": "Widya"
+    },
+    {
+        "full_name": "Widya"
+    },
+    {
+        "full_name": "Novaliza"
+    },
+    {
+        "full_name": "Novaliza"
+    },
+    {
+        "full_name": "Fernando Dian"
+    },
+    {
+        "full_name": "Fernando Dian"
+    },
+    {
+        "full_name": "Fernando Dian"
+    },
+    {
+        "full_name": "Widya"
+    },
+    {
+        "full_name": "Fernando Dian k"
+    },
+    {
+        "full_name": "Fernando Dian k"
+    },
+    {
+        "full_name": "Fernando Dian k"
+    },
+    {
+        "full_name": "Fernando Dian k"
+    },
+    {
+        "full_name": "Fernando Dian k"
+    },
+    {
+        "full_name": "Novaliza01"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Azhar Test Register"
+    },
+    {
+        "full_name": "Azhar Test Register"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "John Doe"
+    },
+    {
+        "full_name": "User Test"
+    },
+    {
+        "full_name": "User Test 1"
+    },
+    {
+        "full_name": "E2E Test Full Name"
+    },
+    {
+        "full_name": "Azhar Test Register"
+    }
+]
+[
+    {
+        "query": "E2E Test Full Name uBdEmEJuMb",
+        "result": [
+            {
+                
+            }
+        ]
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="getAllEmployee" classname="e2e_Tugas2.deleteEmployee" time="2.05"/>
+</testsuite>

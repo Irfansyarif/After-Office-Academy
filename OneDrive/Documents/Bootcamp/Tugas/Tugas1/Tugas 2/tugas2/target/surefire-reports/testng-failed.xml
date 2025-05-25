@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [E2ESuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" parallel="methods" name="E2E(failed)" verbose="0">
+    <classes>
+      <class name="e2e_Tugas2.deleteEmployee">
+        <methods>
+          <include name="DeleteEmployee"/>
+          <include name="searchEmployee"/>
+          <include name="getAllEmployee"/>
+        </methods>
+      </class> <!-- e2e_Tugas2.deleteEmployee -->
+    </classes>
+  </test> <!-- E2E(failed) -->
+</suite> <!-- Failed suite [E2ESuite] -->

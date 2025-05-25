@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-25T08:45:25 WIB" name="E2ESuite" finished-at="2025-05-25T08:45:34 WIB" duration-ms="9548">
+    <groups>
+      <group name="assertEmployeeRegister">
+        <method signature="registerEmployee.getAllEmployee()[pri:0, instance:e2e_Tugas2.registerEmployee@75e09567]" name="getAllEmployee" class="e2e_Tugas2.registerEmployee"/>
+        <method signature="registerEmployee.searchEmployee()[pri:0, instance:e2e_Tugas2.registerEmployee@75e09567]" name="searchEmployee" class="e2e_Tugas2.registerEmployee"/>
+      </group> <!-- assertEmployeeRegister -->
+    </groups>
+    <test started-at="2025-05-25T08:45:25 WIB" name="E2E" finished-at="2025-05-25T08:45:34 WIB" duration-ms="9548">
+      <class name="e2e_Tugas2.deleteEmployee">
+        <test-method signature="DeleteEmployee()[pri:0, instance:e2e_Tugas2.deleteEmployee@67f77f6e]" started-at="2025-05-25T08:45:31 WIB" name="DeleteEmployee" depends-on-groups="assertEmployeeRegister" finished-at="2025-05-25T08:45:32 WIB" duration-ms="788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteEmployee -->
+        <test-method signature="getAllEmployee()[pri:0, instance:e2e_Tugas2.deleteEmployee@67f77f6e]" started-at="2025-05-25T08:45:32 WIB" name="getAllEmployee" finished-at="2025-05-25T08:45:34 WIB" depends-on-methods="e2e_Tugas2.deleteEmployee.DeleteEmployee" duration-ms="2050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllEmployee -->
+        <test-method signature="searchEmployee()[pri:0, instance:e2e_Tugas2.deleteEmployee@67f77f6e]" started-at="2025-05-25T08:45:32 WIB" name="searchEmployee" finished-at="2025-05-25T08:45:33 WIB" depends-on-methods="e2e_Tugas2.deleteEmployee.DeleteEmployee" duration-ms="874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchEmployee -->
+      </class> <!-- e2e_Tugas2.deleteEmployee -->
+      <class name="e2e_Tugas2.registerEmployee">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:e2e_Tugas2.registerEmployee@75e09567]" started-at="2025-05-25T08:45:24 WIB" name="beforeSuite" finished-at="2025-05-25T08:45:25 WIB" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method signature="addEmployee()[pri:0, instance:e2e_Tugas2.registerEmployee@75e09567]" started-at="2025-05-25T08:45:25 WIB" name="addEmployee" finished-at="2025-05-25T08:45:28 WIB" duration-ms="3058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployee -->
+        <test-method signature="loginEmployee()[pri:0, instance:e2e_Tugas2.registerEmployee@75e09567]" started-at="2025-05-25T08:45:28 WIB" name="loginEmployee" finished-at="2025-05-25T08:45:29 WIB" depends-on-methods="e2e_Tugas2.registerEmployee.addEmployee" duration-ms="868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginEmployee -->
+        <test-method signature="getAllEmployee()[pri:0, instance:e2e_Tugas2.registerEmployee@75e09567]" started-at="2025-05-25T08:45:29 WIB" name="getAllEmployee" finished-at="2025-05-25T08:45:31 WIB" depends-on-methods="e2e_Tugas2.registerEmployee.loginEmployee" duration-ms="2705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllEmployee -->
+        <test-method signature="searchEmployee()[pri:0, instance:e2e_Tugas2.registerEmployee@75e09567]" started-at="2025-05-25T08:45:29 WIB" name="searchEmployee" finished-at="2025-05-25T08:45:29 WIB" depends-on-methods="e2e_Tugas2.registerEmployee.loginEmployee" duration-ms="931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchEmployee -->
+      </class> <!-- e2e_Tugas2.registerEmployee -->
+    </test> <!-- E2E -->
+  </suite> <!-- E2ESuite -->
+</testng-results>
