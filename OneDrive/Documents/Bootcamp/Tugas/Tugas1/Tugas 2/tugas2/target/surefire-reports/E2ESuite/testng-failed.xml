@@ -3,13 +3,13 @@
 <suite parallel="methods" name="Failed suite [E2ESuite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" parallel="methods" name="E2E(failed)" verbose="0">
     <classes>
-      <class name="e2e_Tugas2.registerEmployee">
+      <class name="e2e_Tugas2.deleteEmployee">
         <methods>
-          <include name="loginEmployee"/>
-          <include name="addEmployee"/>
-          <include name="beforeSuite"/>
+          <include name="DeleteEmployee"/>
+          <include name="searchEmployee"/>
+          <include name="getAllEmployee"/>
         </methods>
-      </class> <!-- e2e_Tugas2.registerEmployee -->
+      </class> <!-- e2e_Tugas2.deleteEmployee -->
     </classes>
   </test> <!-- E2E(failed) -->
 </suite> <!-- Failed suite [E2ESuite] -->

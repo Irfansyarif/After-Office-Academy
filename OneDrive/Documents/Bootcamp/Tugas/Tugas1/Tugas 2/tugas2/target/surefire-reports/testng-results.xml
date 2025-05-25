@@ -1,145 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="0" total="4" passed="0" failed="1" skipped="1">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-25T15:59:52 WIB" name="E2ESuite" finished-at="2025-05-25T15:59:56 WIB" duration-ms="4249">
+  <suite started-at="2025-05-25T17:13:09 WIB" name="E2ESuite" finished-at="2025-05-25T17:13:20 WIB" duration-ms="10335">
     <groups>
+      <group name="assertEmployeeRegister">
+        <method signature="registerEmployee.getAllEmployee()[pri:0, instance:e2e_Tugas2.registerEmployee@2a39aa2b]" name="getAllEmployee" class="e2e_Tugas2.registerEmployee"/>
+      </group> <!-- assertEmployeeRegister -->
     </groups>
-    <test started-at="2025-05-25T15:59:52 WIB" name="E2E" finished-at="2025-05-25T15:59:56 WIB" duration-ms="4249">
+    <test started-at="2025-05-25T17:13:09 WIB" name="E2E" finished-at="2025-05-25T17:13:20 WIB" duration-ms="10335">
+      <class name="e2e_Tugas2.deleteEmployee">
+        <test-method signature="DeleteEmployee()[pri:0, instance:e2e_Tugas2.deleteEmployee@51ab1ee3]" started-at="2025-05-25T17:13:16 WIB" name="DeleteEmployee" depends-on-groups="assertEmployeeRegister" finished-at="2025-05-25T17:13:17 WIB" duration-ms="651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteEmployee -->
+        <test-method signature="searchEmployee()[pri:0, instance:e2e_Tugas2.deleteEmployee@51ab1ee3]" started-at="2025-05-25T17:13:17 WIB" name="searchEmployee" finished-at="2025-05-25T17:13:18 WIB" depends-on-methods="e2e_Tugas2.deleteEmployee.DeleteEmployee" duration-ms="716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchEmployee -->
+        <test-method signature="getAllEmployee()[pri:0, instance:e2e_Tugas2.deleteEmployee@51ab1ee3]" started-at="2025-05-25T17:13:17 WIB" name="getAllEmployee" finished-at="2025-05-25T17:13:20 WIB" depends-on-methods="e2e_Tugas2.deleteEmployee.DeleteEmployee" duration-ms="2541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllEmployee -->
+      </class> <!-- e2e_Tugas2.deleteEmployee -->
       <class name="e2e_Tugas2.registerEmployee">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:e2e_Tugas2.registerEmployee@546ed2a0]" started-at="2025-05-25T15:59:52 WIB" name="beforeSuite" finished-at="2025-05-25T15:59:52 WIB" duration-ms="50" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:e2e_Tugas2.registerEmployee@2a39aa2b]" started-at="2025-05-25T17:13:09 WIB" name="beforeSuite" finished-at="2025-05-25T17:13:09 WIB" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method retried="true" signature="addEmployee()[pri:0, instance:e2e_Tugas2.registerEmployee@546ed2a0]" started-at="2025-05-25T15:59:52 WIB" name="addEmployee" finished-at="2025-05-25T15:59:54 WIB" duration-ms="2568" status="SKIP">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Schema to use cannot be null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Schema to use cannot be null
-at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
-at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
-at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
-at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
-at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-at e2e_Tugas2.registerEmployee.addEmployee(registerEmployee.java:52)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+        <test-method signature="addEmployee()[pri:0, instance:e2e_Tugas2.registerEmployee@2a39aa2b]" started-at="2025-05-25T17:13:09 WIB" name="addEmployee" finished-at="2025-05-25T17:13:12 WIB" duration-ms="2773" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployee -->
-        <test-method retried="true" signature="addEmployee()[pri:0, instance:e2e_Tugas2.registerEmployee@546ed2a0]" started-at="2025-05-25T15:59:54 WIB" name="addEmployee" finished-at="2025-05-25T15:59:55 WIB" duration-ms="828" status="SKIP">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Schema to use cannot be null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Schema to use cannot be null
-at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
-at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
-at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
-at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
-at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-at e2e_Tugas2.registerEmployee.addEmployee(registerEmployee.java:52)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployee -->
-        <test-method signature="addEmployee()[pri:0, instance:e2e_Tugas2.registerEmployee@546ed2a0]" started-at="2025-05-25T15:59:55 WIB" name="addEmployee" finished-at="2025-05-25T15:59:56 WIB" duration-ms="804" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Schema to use cannot be null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Schema to use cannot be null
-at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
-at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
-at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
-at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
-at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-at e2e_Tugas2.registerEmployee.addEmployee(registerEmployee.java:52)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployee -->
-        <test-method signature="loginEmployee()[pri:0, instance:e2e_Tugas2.registerEmployee@546ed2a0]" started-at="2025-05-25T15:59:56 WIB" name="loginEmployee" finished-at="2025-05-25T15:59:56 WIB" depends-on-methods="e2e_Tugas2.registerEmployee.addEmployee" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method e2e_Tugas2.registerEmployee.loginEmployee() on instance e2e_Tugas2.registerEmployee@546ed2a0 depends on not successfully finished methods 
-[e2e_Tugas2.registerEmployee.addEmployee() on instance e2e_Tugas2.registerEmployee@546ed2a0]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method e2e_Tugas2.registerEmployee.loginEmployee() on instance e2e_Tugas2.registerEmployee@546ed2a0 depends on not successfully finished methods 
-[e2e_Tugas2.registerEmployee.addEmployee() on instance e2e_Tugas2.registerEmployee@546ed2a0]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="loginEmployee()[pri:0, instance:e2e_Tugas2.registerEmployee@2a39aa2b]" started-at="2025-05-25T17:13:12 WIB" name="loginEmployee" finished-at="2025-05-25T17:13:13 WIB" depends-on-methods="e2e_Tugas2.registerEmployee.addEmployee" duration-ms="1282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginEmployee -->
+        <test-method signature="getAllEmployee()[pri:0, instance:e2e_Tugas2.registerEmployee@2a39aa2b]" started-at="2025-05-25T17:13:13 WIB" name="getAllEmployee" finished-at="2025-05-25T17:13:16 WIB" depends-on-methods="e2e_Tugas2.registerEmployee.loginEmployee" duration-ms="3026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllEmployee -->
       </class> <!-- e2e_Tugas2.registerEmployee -->
     </test> <!-- E2E -->
   </suite> <!-- E2ESuite -->
