@@ -49,8 +49,9 @@ public class registerEmployee {
                 .post(staticVar.BASE_URL + "/employee/add");
 
         System.out.println(res.asPrettyString());
+        System.out.println(System.getProperty("java.class.path"));
 
-        //res.then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("add_employee_schema.json"));
+        res.then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("add_employee_schema.json"));
               
         List<addEmployeeResponse> addEmployeeResponse = objectMapper.readValue(res.body().asString(),new TypeReference<List<addEmployeeResponse>>() {
                 });
@@ -77,7 +78,7 @@ public class registerEmployee {
                 .when()
                 .post(staticVar.BASE_URL + "/employee/login");
 
-        // res.then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("login_schema.json"));
+        res.then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("login_schema.json"));
 
         List<loginEmployee> loginEmployeeResponse = objectMapper.readValue(res.body().asString(),
                 new TypeReference<List<loginEmployee>>() {

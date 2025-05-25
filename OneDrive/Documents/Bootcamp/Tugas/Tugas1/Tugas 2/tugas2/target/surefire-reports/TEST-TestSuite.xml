@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="11.0" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="7.685" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-18.0.2\bin"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install -DsuiteXml=src/test/java/Resources/e2e.xml"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install -DsuiteXml=src/test/Resources/e2e.xml"/>
     <property name="jdk.debug" value="release"/>
     <property name="maven.home" value="C:\apache-maven-3.8.6"/>
     <property name="surefire.test.class.path" value="C:\Users\irfan\OneDrive\Documents\Bootcamp\Tugas\Tugas1\Tugas 2\tugas2\target\test-classes;C:\Users\irfan\OneDrive\Documents\Bootcamp\Tugas\Tugas1\Tugas 2\tugas2\target\classes;C:\Users\irfan\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\irfan\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\irfan\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\irfan\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\irfan\.m2\repository\io\rest-assured\rest-assured\5.5.1\rest-assured-5.5.1.jar;C:\Users\irfan\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\irfan\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\irfan\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\irfan\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\irfan\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\irfan\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\irfan\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\irfan\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\irfan\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\irfan\.m2\repository\io\rest-assured\json-path\5.5.1\json-path-5.5.1.jar;C:\Users\irfan\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\irfan\.m2\repository\io\rest-assured\rest-assured-common\5.5.1\rest-assured-common-5.5.1.jar;C:\Users\irfan\.m2\repository\io\rest-assured\xml-path\5.5.1\xml-path-5.5.1.jar;C:\Users\irfan\.m2\repository\org\apache\commons\commons-lang3\3.16.0\commons-lang3-3.16.0.jar;C:\Users\irfan\.m2\repository\org\projectlombok\lombok\1.18.38\lombok-1.18.38.jar;C:\Users\irfan\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.19.0\jackson-databind-2.19.0.jar;C:\Users\irfan\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.19.0\jackson-annotations-2.19.0.jar;C:\Users\irfan\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.19.0\jackson-core-2.19.0.jar;C:\Users\irfan\.m2\repository\io\rest-assured\json-schema-validator\5.5.2\json-schema-validator-5.5.2.jar;C:\Users\irfan\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\irfan\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\irfan\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\irfan\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\irfan\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\irfan\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\irfan\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\irfan\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\irfan\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\irfan\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\irfan\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\irfan\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\irfan\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\irfan\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\irfan\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\irfan\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\irfan\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\irfan\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\irfan\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;"/>
@@ -46,7 +46,7 @@
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="localRepository" value="C:\Users\irfan\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="suiteXml" value="src/test/java/Resources/e2e.xml"/>
+    <property name="suiteXml" value="src/test/Resources/e2e.xml"/>
     <property name="java.io.tmpdir" value="C:\Users\irfan\AppData\Local\Temp\"/>
     <property name="java.version" value="18.0.2"/>
     <property name="user.dir" value="C:\Users\irfan\OneDrive\Documents\Bootcamp\Tugas\Tugas1\Tugas 2\tugas2"/>
@@ -55,7 +55,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-18.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\apache-maven-3.8.6\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\dotnet\;C:\Users\irfan\AppData\Local\Microsoft\WindowsApps;;C:\Users\irfan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\irfan\AppData\Roaming\npm;C:\Users\irfan\.dotnet\tools;C:\Users\irfan\AppData\Local\Programs\Ollama;C:\Users\irfan\AppData\Local\Programs\cursor\resources\app\bin;c:\Users\irfan\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-18.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\apache-maven-3.8.6\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\dotnet\;C:\Users\irfan\AppData\Local\Microsoft\WindowsApps;;C:\Users\irfan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\irfan\AppData\Roaming\npm;C:\Users\irfan\.dotnet\tools;C:\Users\irfan\AppData\Local\Programs\Ollama;C:\Users\irfan\AppData\Local\Programs\cursor\resources\app\bin;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="18.0.2+9-61"/>
@@ -64,7 +64,7 @@
     <property name="library.jansi.path" value="C:\apache-maven-3.8.6\lib\jansi-native"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="addEmployee" classname="e2e_Tugas2.registerEmployee" time="2.773">
+  <testcase name="addEmployee" classname="e2e_Tugas2.registerEmployee" time="2.851">
     <system-out><![CDATA[Suite E2E running...
 addEmployee starting....
 Request method:	POST
@@ -80,31 +80,32 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "testadhxDxTJ@mail.com",
-    "password": "dhxDxTJ",
-    "full_name": "NamedhxDxTJ",
+    "email": "testaFiYiEnN@mail.com",
+    "password": "FiYiEnN",
+    "full_name": "NameFiYiEnN",
     "department": "Technology",
     "title": "QA"
 }
 [
     {
-        "id": 469,
-        "email": "testadhxDxTJ@mail.com",
-        "password_hash": "7077d026254b1e47a74957c446f6b649",
-        "full_name": "NamedhxDxTJ",
+        "id": 487,
+        "email": "testaFiYiEnN@mail.com",
+        "password_hash": "a0e8c1543cacf8054d506d7c81b57a48",
+        "full_name": "NameFiYiEnN",
         "department": "Technology",
         "title": "QA",
-        "create_at": "2025-05-25T10:13:12.143Z",
-        "update_at": "2025-05-25T10:13:12.143Z"
+        "create_at": "2025-05-25T11:30:46.640Z",
+        "update_at": "2025-05-25T11:30:46.640Z"
     }
 ]
+C:\apache-maven-3.8.6\boot\plexus-classworlds-2.6.0.jar
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="loginEmployee" classname="e2e_Tugas2.registerEmployee" time="1.282">
+  <testcase name="loginEmployee" classname="e2e_Tugas2.registerEmployee" time="1.292">
     <system-out><![CDATA[loginEmployee starting....
 Request method:	POST
 Request URI:	https://whitesmokehouse.com/webhook/employee/login
@@ -119,16 +120,16 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "testadhxDxTJ@mail.com",
-    "password": "dhxDxTJ",
-    "full_name": "NamedhxDxTJ",
+    "email": "testaFiYiEnN@mail.com",
+    "password": "FiYiEnN",
+    "full_name": "NameFiYiEnN",
     "department": "Technology",
     "title": "QA"
 }
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ2OSIsImlhdCI6MTc0ODE2Nzk5Mn0.tKr9ra5c_dlVTuAk0d6fEMBXiZ-6bDucUzAIN4P_Oeg
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ4NyIsImlhdCI6MTc0ODE3MjY0N30.6-k5LsFgdzGLJxg0ZmWbIBxhe9JWoZzc7KaEBwT3HW4
 ]]></system-out>
   </testcase>
-  <testcase name="getAllEmployee" classname="e2e_Tugas2.registerEmployee" time="3.026">
+  <testcase name="getAllEmployee" classname="e2e_Tugas2.registerEmployee" time="2.911">
     <system-out><![CDATA[getAllEmployee starting....
 Request method:	GET
 Request URI:	https://whitesmokehouse.com/webhook/employee/get_all
@@ -642,9 +643,6 @@ Body:			<none>
         "full_name": "User Test 1748162762399"
     },
     {
-        "full_name": "User Test 1748162908773"
-    },
-    {
         "full_name": "User Test 1748163004870"
     },
     {
@@ -717,641 +715,33 @@ Body:			<none>
         "full_name": "Updated User Test 1748167905366"
     },
     {
-        "full_name": "NamedhxDxTJ"
+        "full_name": "NamexjbEiKB"
+    },
+    {
+        "full_name": "Updated User Test 1748168438230"
+    },
+    {
+        "full_name": "Updated User Test 1748168698894"
+    },
+    {
+        "full_name": "NamerTdyKlW"
+    },
+    {
+        "full_name": "NamecehbHPl"
+    },
+    {
+        "full_name": "NamenAipmJC"
+    },
+    {
+        "full_name": "NamemBoJOgV"
+    },
+    {
+        "full_name": "NameCBaoxds"
+    },
+    {
+        "full_name": "NameFiYiEnN"
     }
 ]
 ]]></system-out>
   </testcase>
-  <testcase name="DeleteEmployee" classname="e2e_Tugas2.deleteEmployee" time="0.65">
-    <system-out><![CDATA[deleteEmployee starting....
-Request method:	DELETE
-Request URI:	https://whitesmokehouse.com/webhook/employee/delete
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ2OSIsImlhdCI6MTc0ODE2Nzk5Mn0.tKr9ra5c_dlVTuAk0d6fEMBXiZ-6bDucUzAIN4P_Oeg
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-]]></system-out>
-  </testcase>
-  <testcase name="searchEmployee" classname="e2e_Tugas2.deleteEmployee" time="0.717">
-    <system-out><![CDATA[getAllEmployee starting....
-searchEmployee starting....
-Request method:	GET
-Request URI:	https://whitesmokehouse.com/webhook/41a9698d-d8b0-42df-9ddc-89c0a1a1aa79/employee/search/NamedhxDxTJ
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	GET
-Request URI:	https://whitesmokehouse.com/webhook/employee/get_all
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-[
-    {
-        "full_name": "Rayhan Rendy"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "null"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Update PdwBoDdBkI"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "fifi noela"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "Hairul Hasabi"
-    },
-    {
-        "full_name": "Hairul Hasabi"
-    },
-    {
-        "full_name": "Hairul Hasabi Full Name"
-    },
-    {
-        "full_name": "Hairul Hasabi Full Name"
-    },
-    {
-        "full_name": "Hairul Hasabi Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "Hairul Hasabi Full Name"
-    },
-    {
-        "full_name": "Hairul Hasabi Full Name"
-    },
-    {
-        "full_name": "Hairul Hasabi Full Name"
-    },
-    {
-        "full_name": "Hairul Hasabi Full Name"
-    },
-    {
-        "full_name": "Hairul Hasabi Full Name"
-    },
-    {
-        "full_name": "Hairul Hasabi Full Name"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "Hairul Hasabi Full Name"
-    },
-    {
-        "full_name": "Hairul Hasabi Full Name"
-    },
-    {
-        "full_name": "test name"
-    },
-    {
-        "full_name": "Albert Simanjuntak"
-    },
-    {
-        "full_name": "Hairul Hasabi Full Name"
-    },
-    {
-        "full_name": "Hairul Hasabi Full Name"
-    },
-    {
-        "full_name": "Test E2E Full Name"
-    },
-    {
-        "full_name": "Hairul Hasabi Full Name"
-    },
-    {
-        "full_name": "test name"
-    },
-    {
-        "full_name": "test name"
-    },
-    {
-        "full_name": "afteroffice1234"
-    },
-    {
-        "full_name": "Hairul Hasabi Full Name"
-    },
-    {
-        "full_name": "test name"
-    },
-    {
-        "full_name": "test name"
-    },
-    {
-        "full_name": "test name"
-    },
-    {
-        "full_name": "Ini nama yg udh diupdate ya"
-    },
-    {
-        "full_name": "Ini nama yg udh diupdate ya"
-    },
-    {
-        "full_name": "Hairul Hasabi Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "test name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "Azhar Test Register 2"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Update pPhqZGSqCX"
-    },
-    {
-        "full_name": "Budi "
-    },
-    {
-        "full_name": "Budi "
-    },
-    {
-        "full_name": "Budi "
-    },
-    {
-        "full_name": "Budi"
-    },
-    {
-        "full_name": "Budi"
-    },
-    {
-        "full_name": "Budi"
-    },
-    {
-        "full_name": "afteroffice1234"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "Widya"
-    },
-    {
-        "full_name": "Widya"
-    },
-    {
-        "full_name": "Widya"
-    },
-    {
-        "full_name": "widyu"
-    },
-    {
-        "full_name": "Widya"
-    },
-    {
-        "full_name": "Widya"
-    },
-    {
-        "full_name": "Novaliza"
-    },
-    {
-        "full_name": "Novaliza"
-    },
-    {
-        "full_name": "Fernando Dian"
-    },
-    {
-        "full_name": "Fernando Dian"
-    },
-    {
-        "full_name": "Fernando Dian"
-    },
-    {
-        "full_name": "Widya"
-    },
-    {
-        "full_name": "Fernando Dian k"
-    },
-    {
-        "full_name": "Fernando Dian k"
-    },
-    {
-        "full_name": "Fernando Dian k"
-    },
-    {
-        "full_name": "Fernando Dian k"
-    },
-    {
-        "full_name": "Fernando Dian k"
-    },
-    {
-        "full_name": "Novaliza01"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "Azhar Test Register"
-    },
-    {
-        "full_name": "Azhar Test Register"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "John Doe"
-    },
-    {
-        "full_name": "User Test"
-    },
-    {
-        "full_name": "User Test 1"
-    },
-    {
-        "full_name": "E2E Test Full Name"
-    },
-    {
-        "full_name": "Azhar Test Register"
-    },
-    {
-        "full_name": "Azhar Test Register"
-    },
-    {
-        "full_name": "Azhar Test Register"
-    },
-    {
-        "full_name": "Azhar Test Register"
-    },
-    {
-        "full_name": "NamebbwClOF"
-    },
-    {
-        "full_name": "NameyhBWrrL"
-    },
-    {
-        "full_name": "NamewjRynnD"
-    },
-    {
-        "full_name": "NamezLNmfCe"
-    },
-    {
-        "full_name": "NameRUhOMQn"
-    },
-    {
-        "full_name": "User Test 1748162064028"
-    },
-    {
-        "full_name": "User Test 1748162535441"
-    },
-    {
-        "full_name": "User Test 1748162762399"
-    },
-    {
-        "full_name": "User Test 1748162908773"
-    },
-    {
-        "full_name": "User Test 1748163004870"
-    },
-    {
-        "full_name": "User Test 1748163199141"
-    },
-    {
-        "full_name": "User Test 1748163473623"
-    },
-    {
-        "full_name": "User Test 1748163548989"
-    },
-    {
-        "full_name": "NameKuUnEmd"
-    },
-    {
-        "full_name": "User Test 1748163660478"
-    },
-    {
-        "full_name": "NameYWcOjfn"
-    },
-    {
-        "full_name": "NameTQvtIDb"
-    },
-    {
-        "full_name": "NameOhmuKMt"
-    },
-    {
-        "full_name": "NameCsQTICo"
-    },
-    {
-        "full_name": "NameTETbMOI"
-    },
-    {
-        "full_name": "NameeHHHvYD"
-    },
-    {
-        "full_name": "User Test 1748165487093"
-    },
-    {
-        "full_name": "User Test 1748165573936"
-    },
-    {
-        "full_name": "NameJyLvdUs"
-    },
-    {
-        "full_name": "NameiVqDqds"
-    },
-    {
-        "full_name": "User Test 1748167063697"
-    },
-    {
-        "full_name": "NamepWKHSug"
-    },
-    {
-        "full_name": "NameNqdAKJY"
-    },
-    {
-        "full_name": "User Test 1748167319040"
-    },
-    {
-        "full_name": "NameYoSlZIB"
-    },
-    {
-        "full_name": "NamenrnLDbm"
-    },
-    {
-        "full_name": "Updated User Test 1748167815336"
-    },
-    {
-        "full_name": "Updated User Test 1748167905366"
-    }
-]
-[
-    {
-        "query": "NamedhxDxTJ",
-        "result": [
-            {
-                
-            }
-        ]
-    }
-]
-]]></system-out>
-  </testcase>
-  <testcase name="getAllEmployee" classname="e2e_Tugas2.deleteEmployee" time="2.541"/>
 </testsuite>
