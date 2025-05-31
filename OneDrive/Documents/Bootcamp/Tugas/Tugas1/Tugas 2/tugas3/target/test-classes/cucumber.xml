@@ -3,7 +3,7 @@
 <suite name="CucumberSuite" verbose="1" parallel="true" thread-count="5">
   <test name="CucumberTest">
     <packages>
-      <package name="employee_Definition"></package>
+      <package name="Cucumber.Runners"></package>
     </packages>
   </test>
 </suite>

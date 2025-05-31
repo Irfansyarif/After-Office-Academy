@@ -1,6 +1,6 @@
 com\tugas2\program\Main.class
 com\tugas2\program\Model\response_model\getEmployeeResponse.class
 com\tugas2\program\Model\EmployeeModel.class
-com\tugas2\program\Model\response_model\addEmployeeResponse.class
+com\tugas2\program\Model\response_model\addObjectResponse.class
 com\tugas2\program\Model\loginModel.class
 com\tugas2\program\Model\response_model\loginEmployee.class
