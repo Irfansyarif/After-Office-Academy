@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="8.965" tests="5" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="8.131" tests="5" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -64,13 +64,10 @@
     <property name="library.jansi.path" value="C:\apache-maven-3.8.6\lib\jansi-native"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="runScenario[&quot;&quot;, &quot;Employee API&quot;](1)" classname="Cucumber.Runners.cucumberRunner" time="3.547">
+  <testcase name="runScenario[&quot;&quot;, &quot;Employee API&quot;](1)" classname="Cucumber.Runners.cucumberRunner" time="3.118">
     <system-out><![CDATA[
 Scenario:                                                                     # src/test/resources/employee.feature:19
   Given The base url in this feature is "https://whitesmokehouse.com/webhook" # Cucumber.Definitions.employee_Definition.set_base_url(java.lang.String)
-Response: {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwODAiLCJpYXQiOjE3NDg2ODkyMDV9.IR5WMzVshyI1gnkH2n7aliTx3KEKILQTJZ_VLF_RKnA"
-}
   When Send a http "POST" request to "/api/login" with body:                  # Cucumber.Definitions.employee_Definition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
     {
@@ -80,9 +77,9 @@ Response: {
     """
   Then The response status must be 200                                        # Cucumber.Definitions.employee_Definition.send_request_http(int)
 Response: {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwODAiLCJpYXQiOjE3NDg2ODkyMDV9.IR5WMzVshyI1gnkH2n7aliTx3KEKILQTJZ_VLF_RKnA"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwODAiLCJpYXQiOjE3NDg4Mzg2MjF9.AA8mxXP3G9NDqIEmrI0DSia7JNeL9eqlS3jDaZjWlJc"
 }
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwODAiLCJpYXQiOjE3NDg2ODkyMDV9.IR5WMzVshyI1gnkH2n7aliTx3KEKILQTJZ_VLF_RKnA
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwODAiLCJpYXQiOjE3NDg4Mzg2MjF9.AA8mxXP3G9NDqIEmrI0DSia7JNeL9eqlS3jDaZjWlJc
   And Save the token from the response to local storage                       # Cucumber.Definitions.employee_Definition.save_the_token()
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
@@ -90,26 +87,11 @@ SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;&quot;, &quot;Employee API&quot;](2)" classname="Cucumber.Runners.cucumberRunner" time="1.375">
+  <testcase name="runScenario[&quot;&quot;, &quot;Employee API&quot;](2)" classname="Cucumber.Runners.cucumberRunner" time="1.215">
     <system-out><![CDATA[
 Scenario:                                                                      # src/test/resources/employee.feature:30
   Given The base url in this feature is "https://whitesmokehouse.com/webhook"  # Cucumber.Definitions.employee_Definition.set_base_url(java.lang.String)
   Given Make sure token in local storage not empty                             # Cucumber.Definitions.employee_Definition.assert_token_in_variable()
-Response: [
-    {
-        "id": 1049,
-        "name": "Apple MacBook Pro 1231",
-        "data": {
-            "year": "2020",
-            "price": 1500.99,
-            "cpu_model": "Apple M3",
-            "hard_disk_size": "1 TB",
-            "color": "white",
-            "capacity": "2 cpu",
-            "screen_size": "14 Inch"
-        }
-    }
-]
   When Send a http "POST" request to "/api/objects" with body:                 # Cucumber.Definitions.employee_Definition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
     {
@@ -126,33 +108,21 @@ Response: [
     """
   Then The response status must be 200                                         # Cucumber.Definitions.employee_Definition.send_request_http(int)
   And The response schema should be match with schema "add_object_schema.json" # Cucumber.Definitions.employee_Definition.schema_validation(java.lang.String)
-ID: 1049
+ID: 1125
   And Save id from response to local storage                                   # Cucumber.Definitions.employee_Definition.save_id()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;&quot;, &quot;Employee API&quot;](3)" classname="Cucumber.Runners.cucumberRunner" time="0.77">
-    <failure message="Cannot deserialize value of type `java.util.ArrayList&lt;com.tugas2.program.Model.response_model.addObjectResponse&gt;` from Object value (token `JsonToken.START_OBJECT`)&#10; at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]" type="com.fasterxml.jackson.databind.exc.MismatchedInputException"><![CDATA[com.fasterxml.jackson.databind.exc.MismatchedInputException: 
-Cannot deserialize value of type `java.util.ArrayList<com.tugas2.program.Model.response_model.addObjectResponse>` from Object value (token `JsonToken.START_OBJECT`)
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
-	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1794)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1568)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1515)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.handleNonArray(CollectionDeserializer.java:401)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:253)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:29)
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4971)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3887)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3870)
-	at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:74)
+  <testcase name="runScenario[&quot;&quot;, &quot;Employee API&quot;](3)" classname="Cucumber.Runners.cucumberRunner" time="0.719">
+    <failure message="name is null in response object" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: name is null in response object
+	at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:80)
 	at ✽.Name in the response must be "Apple MacBook Pro 1500"(file:///C:/Users/irfan/OneDrive/Documents/Bootcamp/Tugas/Tugas1/Tugas%202/tugas3/src/test/resources/employee.feature:68)
 ]]></failure>
     <system-out><![CDATA[
 Scenario:                                                                                                   # src/test/resources/employee.feature:50
   Given The base url in this feature is "https://whitesmokehouse.com/webhook"                               # Cucumber.Definitions.employee_Definition.set_base_url(java.lang.String)
   Given Make sure token in local storage not empty                                                          # Cucumber.Definitions.employee_Definition.assert_token_in_variable()
-url: https://whitesmokehouse.com/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/1049
+url: https://whitesmokehouse.com/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/1125
+Response body: {"myField":"value-test"}
   When Send update to http "PUT" request to "/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/" with body: # Cucumber.Definitions.employee_Definition.send_delete_request(java.lang.String,java.lang.String,java.lang.String)
     """
     {
@@ -169,78 +139,47 @@ url: https://whitesmokehouse.com/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/ap
     }
     """
   Then The response status must be 200                                                                      # Cucumber.Definitions.employee_Definition.send_request_http(int)
+Response body: {"myField":"value-test"}
+Deserialized name: null
   And Name in the response must be "Apple MacBook Pro 1500"                                                 # Cucumber.Definitions.employee_Definition.assert_full_name(java.lang.String)
-      com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.ArrayList<com.tugas2.program.Model.response_model.addObjectResponse>` from Object value (token `JsonToken.START_OBJECT`)
-       at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
-      	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
-      	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1794)
-      	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1568)
-      	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1515)
-      	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.handleNonArray(CollectionDeserializer.java:401)
-      	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:253)
-      	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:29)
-      	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
-      	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4971)
-      	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3887)
-      	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3870)
-      	at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:74)
+      java.lang.AssertionError: name is null in response object
+      	at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:80)
       	at ✽.Name in the response must be "Apple MacBook Pro 1500"(file:///C:/Users/irfan/OneDrive/Documents/Bootcamp/Tugas/Tugas1/Tugas%202/tugas3/src/test/resources/employee.feature:68)
   And Hard disk in the response must be "10 TB"                                                             # Cucumber.Definitions.employee_Definition.assert_department(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;&quot;, &quot;Employee API&quot;](4)" classname="Cucumber.Runners.cucumberRunner" time="0.675">
-    <failure message="Cannot deserialize value of type `java.util.ArrayList&lt;com.tugas2.program.Model.response_model.addObjectResponse&gt;` from Object value (token `JsonToken.START_OBJECT`)&#10; at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]" type="com.fasterxml.jackson.databind.exc.MismatchedInputException"><![CDATA[com.fasterxml.jackson.databind.exc.MismatchedInputException: 
-Cannot deserialize value of type `java.util.ArrayList<com.tugas2.program.Model.response_model.addObjectResponse>` from Object value (token `JsonToken.START_OBJECT`)
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
-	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1794)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1568)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1515)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.handleNonArray(CollectionDeserializer.java:401)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:253)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:29)
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4971)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3887)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3870)
-	at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:74)
+  <testcase name="runScenario[&quot;&quot;, &quot;Employee API&quot;](4)" classname="Cucumber.Runners.cucumberRunner" time="0.664">
+    <failure message="name not expected" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: name not expected
+	at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:81)
 	at ✽.Name in the response must be "Apple MacBook Pro 1500"(file:///C:/Users/irfan/OneDrive/Documents/Bootcamp/Tugas/Tugas1/Tugas%202/tugas3/src/test/resources/employee.feature:79)
 ]]></failure>
     <system-out><![CDATA[
 Scenario:                                                                                                   # src/test/resources/employee.feature:71
   Given The base url in this feature is "https://whitesmokehouse.com/webhook"                               # Cucumber.Definitions.employee_Definition.set_base_url(java.lang.String)
   Given Make sure token in local storage not empty                                                          # Cucumber.Definitions.employee_Definition.assert_token_in_variable()
-url: https://whitesmokehouse.com/webhook/8749129e-f5f7-4ae6-9b03-93be7252443c/api/objects/1049
+url: https://whitesmokehouse.com/webhook/8749129e-f5f7-4ae6-9b03-93be7252443c/api/objects/1125
+Response body: {"id":1125,"name":"Apple MacBook Pro 1231","data":{"year":"2020","price":"1500.99","cpu_model":"Apple M3","hard_disk_size":"1 TB","color":"white","capacity":2,"screen_size":14}}
   When Send update to http "GET" request to "/8749129e-f5f7-4ae6-9b03-93be7252443c/api/objects/" with body: # Cucumber.Definitions.employee_Definition.send_delete_request(java.lang.String,java.lang.String,java.lang.String)
     """
     {}
     """
   Then The response status must be 200                                                                      # Cucumber.Definitions.employee_Definition.send_request_http(int)
+Response body: {"id":1125,"name":"Apple MacBook Pro 1231","data":{"year":"2020","price":"1500.99","cpu_model":"Apple M3","hard_disk_size":"1 TB","color":"white","capacity":2,"screen_size":14}}
+Deserialized name: Apple MacBook Pro 1231
   And Name in the response must be "Apple MacBook Pro 1500"                                                 # Cucumber.Definitions.employee_Definition.assert_full_name(java.lang.String)
-      com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.ArrayList<com.tugas2.program.Model.response_model.addObjectResponse>` from Object value (token `JsonToken.START_OBJECT`)
-       at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
-      	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
-      	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1794)
-      	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1568)
-      	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1515)
-      	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.handleNonArray(CollectionDeserializer.java:401)
-      	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:253)
-      	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:29)
-      	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
-      	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4971)
-      	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3887)
-      	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3870)
-      	at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:74)
+      java.lang.AssertionError: name not expected
+      	at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:81)
       	at ✽.Name in the response must be "Apple MacBook Pro 1500"(file:///C:/Users/irfan/OneDrive/Documents/Bootcamp/Tugas/Tugas1/Tugas%202/tugas3/src/test/resources/employee.feature:79)
   And Hard disk in the response must be "10 TB"                                                             # Cucumber.Definitions.employee_Definition.assert_department(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;&quot;, &quot;Employee API&quot;](5)" classname="Cucumber.Runners.cucumberRunner" time="0.634">
+  <testcase name="runScenario[&quot;&quot;, &quot;Employee API&quot;](5)" classname="Cucumber.Runners.cucumberRunner" time="0.682">
     <system-out><![CDATA[
 Scenario:                                                                                                      # src/test/resources/employee.feature:82
   Given The base url in this feature is "https://whitesmokehouse.com/webhook"                                  # Cucumber.Definitions.employee_Definition.set_base_url(java.lang.String)
   Given Make sure token in local storage not empty                                                             # Cucumber.Definitions.employee_Definition.assert_token_in_variable()
-url: https://whitesmokehouse.com/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/1049
+url: https://whitesmokehouse.com/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/1125
+Response body: {"status":"deleted","message":"Object with id = 1125, has been deleted."}
   When Send update to http "DELETE" request to "/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/" with body: # Cucumber.Definitions.employee_Definition.send_delete_request(java.lang.String,java.lang.String,java.lang.String)
     """
     {}

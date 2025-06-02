@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-31T18:00:02 WIB" name="CucumberSuite" finished-at="2025-05-31T18:00:10 WIB" duration-ms="7528">
+  <suite started-at="2025-06-02T11:30:18 WIB" name="CucumberSuite" finished-at="2025-06-02T11:30:25 WIB" duration-ms="6908">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.Runners.cucumberRunner@3a4e524]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.Runners.cucumberRunner@c472300]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-05-31T18:00:02 WIB" name="CucumberTest" finished-at="2025-05-31T18:00:10 WIB" duration-ms="7528">
+    <test started-at="2025-06-02T11:30:18 WIB" name="CucumberTest" finished-at="2025-06-02T11:30:25 WIB" duration-ms="6908">
       <class name="Cucumber.Runners.cucumberRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber.Runners.cucumberRunner@3a4e524]" started-at="2025-05-31T18:00:02 WIB" name="setUpClass" finished-at="2025-05-31T18:00:03 WIB" duration-ms="242" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber.Runners.cucumberRunner@c472300]" started-at="2025-06-02T11:30:18 WIB" name="setUpClass" finished-at="2025-06-02T11:30:18 WIB" duration-ms="250" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@359e27d2]]>
+                <![CDATA[org.testng.TestRunner@20890a1a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.Runners.cucumberRunner@3a4e524]" started-at="2025-05-31T18:00:03 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-31T18:00:06 WIB" duration-ms="3546" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.Runners.cucumberRunner@c472300]" started-at="2025-06-02T11:30:18 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-02T11:30:21 WIB" duration-ms="3118" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.Runners.cucumberRunner@3a4e524]" started-at="2025-05-31T18:00:06 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-31T18:00:08 WIB" duration-ms="1375" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.Runners.cucumberRunner@c472300]" started-at="2025-06-02T11:30:21 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-02T11:30:23 WIB" duration-ms="1215" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.Runners.cucumberRunner@3a4e524]" started-at="2025-05-31T18:00:08 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-31T18:00:08 WIB" duration-ms="767" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.Runners.cucumberRunner@c472300]" started-at="2025-06-02T11:30:23 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-02T11:30:23 WIB" duration-ms="717" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -66,34 +66,21 @@
               </value>
             </param>
           </params>
-          <exception class="com.fasterxml.jackson.databind.exc.MismatchedInputException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot deserialize value of type `java.util.ArrayList<com.tugas2.program.Model.response_model.addObjectResponse>` from Object value (token `JsonToken.START_OBJECT`)
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]]]>
+              <![CDATA[name is null in response object]]>
             </message>
             <full-stacktrace>
-              <![CDATA[com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.ArrayList<com.tugas2.program.Model.response_model.addObjectResponse>` from Object value (token `JsonToken.START_OBJECT`)
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
-at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
-at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1794)
-at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1568)
-at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1515)
-at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.handleNonArray(CollectionDeserializer.java:401)
-at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:253)
-at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:29)
-at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
-at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4971)
-at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3887)
-at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3870)
-at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:74)
+              <![CDATA[java.lang.AssertionError: name is null in response object
+at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:80)
 at ✽.Name in the response must be "Apple MacBook Pro 1500"(file:///C:/Users/irfan/OneDrive/Documents/Bootcamp/Tugas/Tugas1/Tugas%202/tugas3/src/test/resources/employee.feature:68)
 ]]>
             </full-stacktrace>
-          </exception> <!-- com.fasterxml.jackson.databind.exc.MismatchedInputException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.Runners.cucumberRunner@3a4e524]" started-at="2025-05-31T18:00:08 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-31T18:00:09 WIB" duration-ms="675" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.Runners.cucumberRunner@c472300]" started-at="2025-06-02T11:30:23 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-02T11:30:24 WIB" duration-ms="664" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -106,34 +93,21 @@ at ✽.Name in the response must be "Apple MacBook Pro 1500"(file:///C:/Users/ir
               </value>
             </param>
           </params>
-          <exception class="com.fasterxml.jackson.databind.exc.MismatchedInputException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot deserialize value of type `java.util.ArrayList<com.tugas2.program.Model.response_model.addObjectResponse>` from Object value (token `JsonToken.START_OBJECT`)
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]]]>
+              <![CDATA[name not expected]]>
             </message>
             <full-stacktrace>
-              <![CDATA[com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.ArrayList<com.tugas2.program.Model.response_model.addObjectResponse>` from Object value (token `JsonToken.START_OBJECT`)
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
-at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
-at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1794)
-at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1568)
-at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1515)
-at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.handleNonArray(CollectionDeserializer.java:401)
-at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:253)
-at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:29)
-at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
-at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4971)
-at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3887)
-at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3870)
-at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:74)
+              <![CDATA[java.lang.AssertionError: name not expected
+at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:81)
 at ✽.Name in the response must be "Apple MacBook Pro 1500"(file:///C:/Users/irfan/OneDrive/Documents/Bootcamp/Tugas/Tugas1/Tugas%202/tugas3/src/test/resources/employee.feature:79)
 ]]>
             </full-stacktrace>
-          </exception> <!-- com.fasterxml.jackson.databind.exc.MismatchedInputException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.Runners.cucumberRunner@3a4e524]" started-at="2025-05-31T18:00:09 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-31T18:00:10 WIB" duration-ms="634" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.Runners.cucumberRunner@c472300]" started-at="2025-06-02T11:30:24 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-02T11:30:25 WIB" duration-ms="682" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -149,11 +123,11 @@ at ✽.Name in the response must be "Apple MacBook Pro 1500"(file:///C:/Users/ir
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.Runners.cucumberRunner@3a4e524]" started-at="2025-05-31T18:00:10 WIB" name="tearDownClass" finished-at="2025-05-31T18:00:10 WIB" duration-ms="228" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.Runners.cucumberRunner@c472300]" started-at="2025-06-02T11:30:25 WIB" name="tearDownClass" finished-at="2025-06-02T11:30:25 WIB" duration-ms="207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="after_suite()[pri:0, instance:Cucumber.Runners.cucumberRunner@3a4e524]" started-at="2025-05-31T18:00:10 WIB" name="after_suite" finished-at="2025-05-31T18:00:11 WIB" duration-ms="751" status="PASS">
+        <test-method is-config="true" signature="after_suite()[pri:0, instance:Cucumber.Runners.cucumberRunner@c472300]" started-at="2025-06-02T11:30:25 WIB" name="after_suite" finished-at="2025-06-02T11:30:26 WIB" duration-ms="612" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after_suite -->

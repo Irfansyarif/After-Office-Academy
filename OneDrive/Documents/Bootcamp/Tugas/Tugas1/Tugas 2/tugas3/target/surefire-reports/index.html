@@ -159,21 +159,9 @@
                   </a> <!-- runScenario("", "Employee API") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("","Employee API")</span>
-                  <div class="stack-trace">com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.ArrayList&lt;com.tugas2.program.Model.response_model.addObjectResponse&gt;` from Object value (token `JsonToken.START_OBJECT`)
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
-	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1794)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1568)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1515)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.handleNonArray(CollectionDeserializer.java:401)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:253)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:29)
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4971)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3887)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3870)
-	at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:74)
-	at ✽.Name in the response must be &quot;Apple MacBook Pro 1500&quot;(file:///C:/Users/irfan/OneDrive/Documents/Bootcamp/Tugas/Tugas1/Tugas%202/tugas3/src/test/resources/employee.feature:68)
+                  <div class="stack-trace">java.lang.AssertionError: name not expected
+	at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:81)
+	at ✽.Name in the response must be &quot;Apple MacBook Pro 1500&quot;(file:///C:/Users/irfan/OneDrive/Documents/Bootcamp/Tugas/Tugas1/Tugas%202/tugas3/src/test/resources/employee.feature:79)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -186,21 +174,9 @@
                   </a> <!-- runScenario("", "Employee API") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("","Employee API")</span>
-                  <div class="stack-trace">com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.ArrayList&lt;com.tugas2.program.Model.response_model.addObjectResponse&gt;` from Object value (token `JsonToken.START_OBJECT`)
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
-	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1794)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1568)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1515)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.handleNonArray(CollectionDeserializer.java:401)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:253)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:29)
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4971)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3887)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3870)
-	at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:74)
-	at ✽.Name in the response must be &quot;Apple MacBook Pro 1500&quot;(file:///C:/Users/irfan/OneDrive/Documents/Bootcamp/Tugas/Tugas1/Tugas%202/tugas3/src/test/resources/employee.feature:79)
+                  <div class="stack-trace">java.lang.AssertionError: name is null in response object
+	at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:80)
+	at ✽.Name in the response must be &quot;Apple MacBook Pro 1500&quot;(file:///C:/Users/irfan/OneDrive/Documents/Bootcamp/Tugas/Tugas1/Tugas%202/tugas3/src/test/resources/employee.feature:68)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -314,23 +290,23 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'Cucumber.Runners.cucumberRunner')
-data.setCell(0, 3, 3546);
+data.setCell(0, 3, 3118);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'Cucumber.Runners.cucumberRunner')
-data.setCell(1, 3, 1375);
+data.setCell(1, 3, 1215);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'Cucumber.Runners.cucumberRunner')
-data.setCell(2, 3, 767);
+data.setCell(2, 3, 717);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'Cucumber.Runners.cucumberRunner')
-data.setCell(3, 3, 675);
+data.setCell(3, 3, 682);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'Cucumber.Runners.cucumberRunner')
-data.setCell(4, 3, 634);
+data.setCell(4, 3, 664);
 window.suiteTableData['CucumberSuite']= { tableData: data, tableDiv: 'times-div-CucumberSuite'}
 return data;
 }
@@ -363,40 +339,40 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Cucumber.Runners.cucumberRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@359e27d2)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@20890a1a)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("", "Employee API")</span>
-                <span class="method-start">255 ms</span>
+                <span class="method-start">267 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("", "Employee API")</span>
-                <span class="method-start">3812 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("", "Employee API")</span>
-                <span class="method-start">5189 ms</span>
+                <span class="method-start">3391 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("", "Employee API")</span>
-                <span class="method-start">5959 ms</span>
+                <span class="method-start">4607 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("", "Employee API")</span>
+                <span class="method-start">5327 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("", "Employee API")</span>
-                <span class="method-start">6635 ms</span>
+                <span class="method-start">5992 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">7271 ms</span>
+                <span class="method-start">6676 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">after_suite</span>
-                <span class="method-start">7541 ms</span>
+                <span class="method-start">6910 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

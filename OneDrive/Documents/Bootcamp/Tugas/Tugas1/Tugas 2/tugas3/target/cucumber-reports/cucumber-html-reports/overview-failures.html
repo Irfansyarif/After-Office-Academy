@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>CucumberProject</td>
-      <td>31 May 2025, 18:00</td>
+      <td>02 Jun 2025, 11:30</td>
     </tr>
   </tbody>
 </table>
@@ -123,7 +123,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.758</span>
+  <span class="lead-duration duration">0.708</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -193,7 +193,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Send update to http <span class="argument">&quot;PUT&quot;</span> request to <span class="argument">&quot;/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/&quot;</span> with body:</span>
 
-  <span class="lead-duration duration">0.683</span>
+  <span class="lead-duration duration">0.653</span>
 
 </div>
 
@@ -268,7 +268,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Name in the response must be <span class="argument">&quot;Apple MacBook Pro 1500&quot;</span></span>
 
-  <span class="lead-duration duration">0.075</span>
+  <span class="lead-duration duration">0.054</span>
 
 </div>
 
@@ -280,23 +280,11 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>com.fasterxml.jackson.databind.exc.MismatchedInputException:</a>
+          <a>java.lang.AssertionError:</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.ArrayList&lt;com.tugas2.program.Model.response_model.addObjectResponse&gt;` from Object value (token `JsonToken.START_OBJECT`)
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
-	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1794)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1568)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1515)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.handleNonArray(CollectionDeserializer.java:401)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:253)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:29)
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4971)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3887)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3870)
-	at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:74)
+        <pre>java.lang.AssertionError: name is null in response object
+	at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:80)
 	at &#10045;.Name in the response must be &quot;Apple MacBook Pro 1500&quot;(file:///C:/Users/irfan/OneDrive/Documents/Bootcamp/Tugas/Tugas1/Tugas%202/tugas3/src/test/resources/employee.feature:68)
 </pre>
       </div>
@@ -363,7 +351,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.667</span>
+  <span class="lead-duration duration">0.659</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-5">
@@ -433,7 +421,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Send update to http <span class="argument">&quot;GET&quot;</span> request to <span class="argument">&quot;/8749129e-f5f7-4ae6-9b03-93be7252443c/api/objects/&quot;</span> with body:</span>
 
-  <span class="lead-duration duration">0.665</span>
+  <span class="lead-duration duration">0.652</span>
 
 </div>
 
@@ -471,7 +459,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">The response status must be <span class="argument">200</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -498,7 +486,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Name in the response must be <span class="argument">&quot;Apple MacBook Pro 1500&quot;</span></span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -510,23 +498,11 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-8">
-          <a>com.fasterxml.jackson.databind.exc.MismatchedInputException:</a>
+          <a>java.lang.AssertionError:</a>
       </div>
       <div id="msg-8" class="collapse collapsable-details  in ">
-        <pre>com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.ArrayList&lt;com.tugas2.program.Model.response_model.addObjectResponse&gt;` from Object value (token `JsonToken.START_OBJECT`)
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
-	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1794)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1568)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1515)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.handleNonArray(CollectionDeserializer.java:401)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:253)
-	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:29)
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4971)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3887)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3870)
-	at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:74)
+        <pre>java.lang.AssertionError: name not expected
+	at Cucumber.Definitions.employee_Definition.assert_full_name(employee_Definition.java:81)
 	at &#10045;.Name in the response must be &quot;Apple MacBook Pro 1500&quot;(file:///C:/Users/irfan/OneDrive/Documents/Bootcamp/Tugas/Tugas1/Tugas%202/tugas3/src/test/resources/employee.feature:79)
 </pre>
       </div>

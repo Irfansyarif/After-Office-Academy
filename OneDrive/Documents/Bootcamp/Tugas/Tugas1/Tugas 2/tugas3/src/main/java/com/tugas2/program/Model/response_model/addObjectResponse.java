@@ -5,28 +5,39 @@ import lombok.Data;
 
 @Data
 public class addObjectResponse {
+    @JsonProperty("myField")
+    private String myField;
+
+    @JsonProperty("id")
+    private String id;
 
     @JsonProperty("name")
-    private Integer name;
+    private String name;
 
-    @JsonProperty("year")
-    private String year;
+    @JsonProperty("data")
+    private DataObject data;
 
-    @JsonProperty("price")
-    private String price;
+    @Data
+    public static class DataObject {
+        @JsonProperty("year")
+        private Integer year;
 
-    @JsonProperty("cpu_model")
-    private String cpuModel;
+        @JsonProperty("price")
+        private Double price;
 
-    @JsonProperty("hard_disk_size")
-    private String HardDiskSize;
+        @JsonProperty("cpu_model")
+        private String cpuModel;
 
-    @JsonProperty("capactity")
-    private String capacity;
+        @JsonProperty("hard_disk_size")
+        private String hardDiskSize;
 
-    @JsonProperty("screen_size")
-    private String screenSize;
+        @JsonProperty("capacity")
+        private String capacity;
 
-    @JsonProperty("color")
-    private String color;
+        @JsonProperty("screen_size")
+        private String screenSize;
+
+        @JsonProperty("color")
+        private String color;
+    }
 }

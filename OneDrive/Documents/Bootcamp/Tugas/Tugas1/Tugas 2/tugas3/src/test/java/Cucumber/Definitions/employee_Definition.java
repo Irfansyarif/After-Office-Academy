@@ -1,9 +1,12 @@
 package Cucumber.Definitions;
+import java.sql.Array;
+import java.util.Collection;
 import java.util.List;
 
 import com.tugas2.program.Model.response_model.addObjectResponse;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -26,7 +29,7 @@ public class employee_Definition {
 
 
     @When("Send a http {string} request to {string} with body:")
-    public void send_request_http(String method, String url, String body) {
+    public void send_request_http(String method, String url, String body)throws Exception {
         // Add employee data
         response = RestAssured
                 .given()
@@ -35,10 +38,8 @@ public class employee_Definition {
                 .body(body)
                 .when()
                 .request(method, employee_Definition.baseUrl + url);
-
-        System.out.println("Response: " + response.asPrettyString());
-    }
-
+          
+}
     @Then("The response status must be {int}")
     public void send_request_http(int statusCode) {
         assert response.statusCode() == statusCode : "Error, due to actual status code is " + response.statusCode();
@@ -69,18 +70,26 @@ public class employee_Definition {
     }
 
     @And("Name in the response must be {string}")
-    public void assert_full_name(String name) throws Exception {
+public void assert_full_name(String Name) throws Exception {
+    
         ObjectMapper objectMapper = new ObjectMapper();
-        List<addObjectResponse> addObjectResponse = objectMapper.readValue(response.body().asString(), new TypeReference<List<addObjectResponse>>() {});
-        assert addObjectResponse.get(0).getName().equals(name) : "name not expected";
-    }
+        String responseBody = response.body().asString();
+        System.out.println("Response body: " + responseBody);
+        addObjectResponse addObjectResponseObj = objectMapper.readValue(responseBody, addObjectResponse.class);
+        System.out.println("Deserialized name: " + addObjectResponseObj.getName());
+        assert addObjectResponseObj.getName() != null : "name is null in response object";
+        assert addObjectResponseObj.getName().equals(Name) : "name not expected";
+   
+}
     
     @And("Hard disk in the response must be {string}")
-    public void assert_department(String harddisk) throws Exception {
-        ObjectMapper objectMapper = new ObjectMapper();
-        List<addObjectResponse> addObjectResponse = objectMapper.readValue(response.body().asString(), new TypeReference<List<addObjectResponse>>() {});
-        assert addObjectResponse.get(0).getHardDiskSize().equals(harddisk) : "Hard Disk Size not expected";
-    }
+public void assert_department(String harddisk) throws Exception {
+    ObjectMapper objectMapper = new ObjectMapper();
+    addObjectResponse addObjectResponseObj = objectMapper.readValue(response.body().asString(), addObjectResponse.class);
+    assert addObjectResponseObj.getData() != null : "data is null in response object";
+    assert addObjectResponseObj.getData().getHardDiskSize().equals(harddisk) : "Hard Disk Size not expected";
+
+}
 
     @When("Send update to http {string} request to {string} with body:")
     public void send_delete_request(String method, String url, String body) {
@@ -91,6 +100,7 @@ public class employee_Definition {
                 .contentType("application/json")
                 .when()
                 .request(method, employee_Definition.baseUrl + url + id);
+                System.out.println("Response body: " + response.body().asString());
 
        
     }
