@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-16T23:06:25 WIB" name="LocatorSuite" finished-at="2025-06-16T23:06:47 WIB" duration-ms="21529">
+    <groups>
+    </groups>
+    <test started-at="2025-06-16T23:06:25 WIB" name="Locater" finished-at="2025-06-16T23:06:47 WIB" duration-ms="21529">
+      <class name="selenium.e2e">
+        <test-method is-config="true" signature="e2eTest()[pri:0, instance:selenium.e2e@1da4b3f9]" started-at="2025-06-16T23:06:22 WIB" name="e2eTest" finished-at="2025-06-16T23:06:25 WIB" duration-ms="2787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- e2eTest -->
+        <test-method signature="login()[pri:0, instance:selenium.e2e@1da4b3f9]" started-at="2025-06-16T23:06:25 WIB" name="login" finished-at="2025-06-16T23:06:32 WIB" duration-ms="6438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="addProductToCart()[pri:0, instance:selenium.e2e@1da4b3f9]" started-at="2025-06-16T23:06:32 WIB" name="addProductToCart" finished-at="2025-06-16T23:06:34 WIB" depends-on-methods="selenium.e2e.login" duration-ms="2155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductToCart -->
+        <test-method signature="validateProductaddedtoCart()[pri:0, instance:selenium.e2e@1da4b3f9]" started-at="2025-06-16T23:06:34 WIB" name="validateProductaddedtoCart" finished-at="2025-06-16T23:06:34 WIB" depends-on-methods="selenium.e2e.addProductToCart" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductaddedtoCart -->
+        <test-method signature="validateProductInCart()[pri:0, instance:selenium.e2e@1da4b3f9]" started-at="2025-06-16T23:06:34 WIB" name="validateProductInCart" finished-at="2025-06-16T23:06:37 WIB" depends-on-methods="selenium.e2e.validateProductaddedtoCart" duration-ms="3181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductInCart -->
+        <test-method signature="fillCustomerInfo()[pri:0, instance:selenium.e2e@1da4b3f9]" started-at="2025-06-16T23:06:37 WIB" name="fillCustomerInfo" finished-at="2025-06-16T23:06:44 WIB" depends-on-methods="selenium.e2e.validateProductInCart" duration-ms="6400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillCustomerInfo -->
+        <test-method signature="validateCheckoutPage()[pri:0, instance:selenium.e2e@1da4b3f9]" started-at="2025-06-16T23:06:44 WIB" name="validateCheckoutPage" finished-at="2025-06-16T23:06:47 WIB" depends-on-methods="selenium.e2e.fillCustomerInfo" duration-ms="3110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCheckoutPage -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:selenium.e2e@1da4b3f9]" started-at="2025-06-16T23:06:47 WIB" name="CloseBrowser" finished-at="2025-06-16T23:06:47 WIB" duration-ms="448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- selenium.e2e -->
+    </test> <!-- Locater -->
+  </suite> <!-- LocatorSuite -->
+</testng-results>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [LocatorSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" parallel="methods" name="Locater(failed)" verbose="0">
+    <classes>
+      <class name="selenium.e2e">
+        <methods>
+          <include name="validateProductaddedtoCart"/>
+          <include name="fillCustomerInfo"/>
+          <include name="validateCheckoutPage"/>
+          <include name="login"/>
+          <include name="addProductToCart"/>
+          <include name="CloseBrowser"/>
+          <include name="validateProductInCart"/>
+          <include name="e2eTest"/>
+        </methods>
+      </class> <!-- selenium.e2e -->
+    </classes>
+  </test> <!-- Locater(failed) -->
+</suite> <!-- Failed suite [LocatorSuite] -->
